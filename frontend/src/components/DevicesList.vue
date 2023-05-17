@@ -274,7 +274,15 @@ export default defineComponent({
 }
 .tablee{
 width: 10px;
-border-bottom: 1px solid black;
+border-bottom: 3px solid black;
+border-collapse: separate;
+border-spacing: 0 20px;
+}
+td {
+  width: 150px;
+  border-bottom: 1px solid black;
+
+  padding: 5px;
 }
 
 </style>
