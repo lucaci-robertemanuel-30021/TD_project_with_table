@@ -45,7 +45,7 @@
     <div class="col-md-6">
 
       <h4>Devices shop quick view</h4>
-      <v-table density="compact" style="max-width: fit-content;">
+      <v-table class="tablee">
     <thead>
       <tr>
         <th style="color: blueviolet;">
@@ -67,7 +67,7 @@
           Available
         </th>
         <th style="color: blueviolet">
-          In stock
+          Stock?
         </th>
         <th style="color: blueviolet">
           Warranty
@@ -82,14 +82,30 @@
         v-for="device in devices"
         :key="device.title"
       >
-        <td>{{ device.title }}</td>
-        <td>{{ device.description }}</td>
-        <td>{{ device.price }}</td>
-        <td>{{ device.brand }}</td>
-        <td>{{ device.condition }}</td>
-        <td>{{ device.available }}</td>
-        <td>{{ device.in_stock }}</td>
-        <td>{{ device.warranty }}</td>
+        <td>
+          <div style="width: 100px"></div>
+          {{ device.title }}</td>
+        <td>
+          <div style="width: 500px"></div>
+          {{ device.description }}</td>
+        <td>
+          <div style="width: 60px"></div>
+          {{ device.price }}</td>
+        <td>
+          <div style="width: 80px"></div>
+          {{ device.brand }}</td>
+        <td>
+          <div style="width: 90px"></div>
+          {{ device.condition }}</td>
+        <td>
+          <div style="width: 100px"></div>
+          {{ device.available }}</td>
+        <td>
+          <div style="width: 60px"></div>
+          {{ device.in_stock }}</td>
+        <td>
+          <div style="width: 80px"></div>
+          {{ device.warranty }}</td>
         <td>{{ device.delivery_options }}</td>
       </tr>
     </tbody>
@@ -163,7 +179,7 @@
       </div>
       <div v-else>
         <br />
-        <p>Please click on a Device...</p>
+        <p> </p>
       </div>
     </div>
   </div>
@@ -253,7 +269,12 @@ export default defineComponent({
 <style>
 .list {
   text-align: margin;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
+.tablee{
+width: 10px;
+border-bottom: 1px solid black;
+}
+
 </style>
