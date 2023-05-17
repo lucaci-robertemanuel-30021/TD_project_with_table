@@ -281,7 +281,6 @@ border-spacing: 0 20px;
 td {
   width: 150px;
   border-bottom: 1px solid black;
-
   padding: 5px;
 }
 
