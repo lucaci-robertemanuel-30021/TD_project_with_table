@@ -24,7 +24,7 @@ db.sequelize.sync();
 
 // root url
 app.get("/", (req, res) => {
-  res.json({ message: "api v1" });
+  res.json({ message: "Welcome to the shadow realm traveller :))" });
 });
 
 require("./app/routes/device.routes")(app);

@@ -114,7 +114,7 @@
       <button class="m-3 btn btn-sm btn-danger" @click="removeAllDevices">
         Remove All
       </button>
-
+      
       <h4>Dev modify products list</h4>
       <ul class="list-group">
         <li
@@ -128,7 +128,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-10">
       <div v-if="currentDevice.id">
         <h4>Device</h4>
         <div>
@@ -179,7 +179,7 @@
       </div>
       <div v-else>
         <br />
-        <p> </p>
+        <p>Click on a device for more options</p>
       </div>
     </div>
   </div>
@@ -282,6 +282,7 @@ td {
   width: 150px;
   border-bottom: 1px solid black;
   padding: 5px;
+  background-color: azure;
 }
 
 </style>
